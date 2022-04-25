@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A899E56-73EA-45F5-85F1-7A9E32AFCC7E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>kutuphane_otomasyonu</RootNamespace>
+    <AssemblyName>kutuphane_otomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph">
+      <HintPath>..\..\..\..\Desktop\zedgraph_dll_v5.1.5\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="isKatmani\kitapYonlendirici.cs" />
+    <Compile Include="isKatmani\ogrKitapYonlendirici.cs" />
+    <Compile Include="sunumKatmani\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="isKatmani\ogrenciYonlendirici.cs" />
+    <Compile Include="sunumKatmani\KitapAlimFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\KitapAlimFormu.Designer.cs">
+      <DependentUpon>KitapAlimFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sunumKatmani\kitapEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\kitapEkleForm.Designer.cs">
+      <DependentUpon>kitapEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sunumKatmani\kitapGuncelleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\kitapGuncelleForm.Designer.cs">
+      <DependentUpon>kitapGuncelleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sunumKatmani\KitapIadeFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\KitapIadeFormu.Designer.cs">
+      <DependentUpon>KitapIadeFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sunumKatmani\kitapSilForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\kitapSilForm.Designer.cs">
+      <DependentUpon>kitapSilForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sunumKatmani\kitapTakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\kitapTakip.Designer.cs">
+      <DependentUpon>kitapTakip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sunumKatmani\ogrenciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\ogrenciEkle.Designer.cs">
+      <DependentUpon>ogrenciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sunumKatmani\ogrenciGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\ogrenciGuncelle.Designer.cs">
+      <DependentUpon>ogrenciGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sunumKatmani\ogrenciSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\ogrenciSil.Designer.cs">
+      <DependentUpon>ogrenciSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sunumKatmani\ogrenciTakip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\ogrenciTakip.Designer.cs">
+      <DependentUpon>ogrenciTakip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sunumKatmani\Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sunumKatmani\ZedGraphForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sunumKatmani\ZedGraphForm.Designer.cs">
+      <DependentUpon>ZedGraphForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="veriKatmani\kitap.cs" />
+    <Compile Include="veriKatmani\ogrenci.cs" />
+    <Compile Include="veriKatmani\ogrKitap.cs" />
+    <Compile Include="veriKatmani\veritabani.cs" />
+    <EmbeddedResource Include="sunumKatmani\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="sunumKatmani\KitapAlimFormu.resx">
+      <DependentUpon>KitapAlimFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sunumKatmani\kitapEkleForm.resx">
+      <DependentUpon>kitapEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sunumKatmani\kitapGuncelleForm.resx">
+      <DependentUpon>kitapGuncelleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sunumKatmani\KitapIadeFormu.resx">
+      <DependentUpon>KitapIadeFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sunumKatmani\kitapSilForm.resx">
+      <DependentUpon>kitapSilForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sunumKatmani\kitapTakip.resx">
+      <DependentUpon>kitapTakip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sunumKatmani\ogrenciEkle.resx">
+      <DependentUpon>ogrenciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sunumKatmani\ogrenciGuncelle.resx">
+      <DependentUpon>ogrenciGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sunumKatmani\ogrenciSil.resx">
+      <DependentUpon>ogrenciSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sunumKatmani\ogrenciTakip.resx">
+      <DependentUpon>ogrenciTakip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sunumKatmani\ZedGraphForm.resx">
+      <DependentUpon>ZedGraphForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
