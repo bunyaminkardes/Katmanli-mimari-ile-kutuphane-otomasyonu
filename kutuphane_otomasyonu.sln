@@ -5,8 +5,6 @@ VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kutuphane_otomasyonu", "kutuphane_otomasyonu\kutuphane_otomasyonu.csproj", "{6A899E56-73EA-45F5-85F1-7A9E32AFCC7E}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "kutuphane_otomasyonu_setup", "kutuphane_otomasyonu_setup\kutuphane_otomasyonu_setup.vdproj", "{17859312-4D96-4D27-8221-6B277B36068F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,8 +15,6 @@ Global
 		{6A899E56-73EA-45F5-85F1-7A9E32AFCC7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A899E56-73EA-45F5-85F1-7A9E32AFCC7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A899E56-73EA-45F5-85F1-7A9E32AFCC7E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{17859312-4D96-4D27-8221-6B277B36068F}.Debug|Any CPU.ActiveCfg = Debug
-		{17859312-4D96-4D27-8221-6B277B36068F}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
