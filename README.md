@@ -1,4 +1,4 @@
-# KutuphaneOtomasyonu
+# Kütüphane Otomasyonu
 
 Uygulama C# ile yazılacaktır.
 
